@@ -1,0 +1,40 @@
+# Example for ~/AUV/auv_m1. Review before installing as .gitignore.
+# Third-party clones: preserve their URLs / commits in the README instead.
+/src/ardupilot/
+/src/ardupilot_gazebo/
+/src/bluerov2_gz/
+
+# Python environments and caches
+.venv/
+venv/
+venv-*/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Builds and ROS workspaces
+build/
+install/
+log/
+
+# SITL state, telemetry, and recordings
+/logs/
+*.tlog
+*.tlog.raw
+*.BIN
+*.bin
+*.bag
+*.db3
+*.mcap
+
+# Local settings, credentials, and backups
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+/scripts/backups/
+*.swp
+*~
+.DS_Store
+Thumbs.db
